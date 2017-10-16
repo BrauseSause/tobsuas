@@ -23,7 +23,7 @@ async def on_message(message):
             id = user.id
             if id == sbid:
                 await client.delete_message(message)
-                await client.send_message(message.channel, "Bitte PilleniusMC nicht taggen!")
+                await client.send_message(message.channel, "Bitte SauseBrause nicht taggen!")
     except Exception as error:
         print("Erwarteter Error: {error}".format(error=error))
 
