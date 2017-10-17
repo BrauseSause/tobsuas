@@ -1,7 +1,6 @@
 import asyncio
 import io
 import random
-import sqlite3
 import discord
 import requests
 
@@ -23,7 +22,7 @@ async def on_message(message):
             id = user.id
             if id == sbid:
                 await client.delete_message(message)
-                await client.send_message(message.channel, "Bitte SauseBrause nicht taggen!")
+                await client.send_message(message.channel, "Bitte SauseBrause nicht taggen! Abfuckschutz aktiviert.")
     except Exception as error:
         print("Erwarteter Error: {error}".format(error=error))
 
