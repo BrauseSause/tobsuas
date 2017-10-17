@@ -34,8 +34,7 @@ async def on_ready():
             if choice == 2:
                 await client.add_reaction(message, '🌕')
 
-    @client.event()
-    @asyncio.coroutine
+    @client.event
     def on_message(message):
         if message.content.startswith(Daten.PREFIX):
             invoke = message.content[len(Daten.PREFIX):].split(" ")[0]
