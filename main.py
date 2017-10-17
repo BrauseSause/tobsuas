@@ -39,7 +39,7 @@ async def on_ready():
     def on_message(message):
         if message.content.startswith(Daten.PREFIX):
             invoke = message.content[len(Daten.PREFIX):].split(" ")[0]
-            args = message.content.slit(" ")[1:]
+            args = message.content.split(" ")[1:]
             print("INVOKE: %s\nARGS: %s" % (invoke, args.__str__ ()[1:-1]).replace("", ""))
 
 
